@@ -1,0 +1,73 @@
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+ 
+
+</head>
+
+<body>
+<?php
+// Set session variables
+$_SESSION["favcolor"] = "green";
+$_SESSION["favanimal"] = "cat";
+echo "Session variables are set.";
+?>
+<script>
+
+</script>
+</head>
+<body>
+<form id="my_form" onsubmit="submitForm(); return false;">
+  <p><input id="n" placeholder="Name" required></p>
+  <p><input id="e" placeholder="Email Address" type="email" required></p>
+  <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+  <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
